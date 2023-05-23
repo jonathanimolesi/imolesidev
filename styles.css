@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111111;
+}
+
+header {
+  background-color: #111111;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 4px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.header-icon {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+main {
+  padding-top: 80px; /* Adapte a altura do header */
+  padding-bottom: 60px; /* Adapte a altura do footer */
+}
+
+.section {
+  margin: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px; /* Espaçamento superior adicional */
+}
+
+.titulo-sessao {
+  text-align: center;
+  color: blueviolet;
+}
+
+
+.logo-linguagem {
+  width: 4%;
+  height: auto;
+  max-width: 280px;
+  margin-right: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.box {
+  width: 300px;
+  height: 500px;
+  background-color: #111111;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: solid;
+}
+
+.box:hover {
+  width: 350px;
+  height: 550px;
+  background-color: #111111;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: solid;
+  border-color: blueviolet;
+}
+
+.box:hover .descricao,
+.box:hover .titulo-projeto {
+  font-weight: bold;
+}
+
+.box:hover .descricao {
+  font-size: calc(1em + 4px);
+}
+
+.box:hover .titulo-projeto {
+  font-size: calc(1em + 6px);
+}
+
+.titulo-projeto {
+  color: white;
+}
+
+.descricao {
+  color: blueviolet;
+  text-align: left;
+}
+
+footer {
+  background-color: #111111;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+/* Responsividade para 2560x917 */
+@media (max-width: 2560px) {
+  .flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Responsividade para 1440x642 */
+@media (max-width: 1440px) {
+  .flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Responsividade para 1024x642 */
+@media (max-width: 1024px) {
+  .flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .box {
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .box {
+    margin-bottom: 10px;
+  }
+}
