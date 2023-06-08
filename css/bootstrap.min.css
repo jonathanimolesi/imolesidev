@@ -16,3 +16,7 @@
     font-weight: bold;
     color: #38b6ff;
 }
+
+.imagem-aumentar:hover {
+  transform: scale(1.2);
+}
